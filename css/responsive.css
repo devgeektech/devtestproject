@@ -1,0 +1,326 @@
+section.active {
+    display: flex;
+}
+@media(min-width:1025px) and (max-width:1660px){
+    section {
+        height: 100vh;
+        padding: 90px 0;
+        display: none;
+    }
+    section#great_news {
+        padding: 0;
+    }
+    section#step-form, section#effective-workout, section#great_news {
+        height: auto;
+        padding: 60px 0;
+    }
+    section.archive-your-dream .lft h1 {
+        font-size: 54px;
+        line-height: 58.8px;
+    }
+    section.archive-your-dream .inr-archive .ryt img {
+        height: calc(100vh - 80px);
+        object-fit: contain;
+    }
+    section.archive-your-dream .lft p {
+        font-size: 28px;
+        line-height: 35.6px;
+        max-width: 300px;
+        margin: 22px 0 22px;
+    }
+    section.archive-your-dream .inr-both-started label input {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+    }
+    section.archive-your-dream .btm-logos {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    section.archive-your-dream .inr-both-started label a img {
+        width: 13px;
+        height: 16px;
+    }
+    section.archive-your-dream .inr-both-started label a {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+    .inr-effective-workout .ryt img {
+        width: 100%;
+    }
+    .inr-effective-workout .lft h2 {
+        font-size: 42px;
+        line-height: 48.2px;
+    }
+    .inr-effective-workout .lft p {
+        font-size: 28px;
+        line-height: 32.6px;
+        margin: 32px 0 40px;
+        max-width: 520px;
+    }
+    .canvans-main {
+        margin: 0 auto 0 50px;
+    }
+    .main-great-news h2 {
+        margin-bottom: 20px;
+    }
+    .main-great-news ul li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .main-great-news ul {
+        gap: 8px;
+        margin: 14px 0 20px;
+    }
+}
+@media(min-width:1025px) and (max-width:1200px){
+    section.archive-your-dream .btm-logos {
+        gap: 20px;
+    }
+    section.archive-your-dream .inr-both-started label a {
+        padding: 10px 20px;
+    }
+    section.archive-your-dream .inr-both-started {
+        gap: 20px;
+    }
+    section.archive-your-dream .lft h1 {
+        font-size: 46px;
+        line-height: 54.8px;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    section {
+        height: auto;
+        padding: 60px 0;
+    }
+    .container {
+        padding: 0 20px;
+        width: 100%;
+    }
+    section.archive-your-dream .btm-logos {
+        position: inherit;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+    section.archive-your-dream .btm-logos img[alt="mayo clinic"] {
+        order: 1;
+    }
+    section.archive-your-dream .inr-archive {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.archive-your-dream .inr-archive .ryt img {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: auto;
+        z-index: -1;
+        bottom: 0;
+        object-fit: contain !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section.archive-your-dream .lft h1 {
+        font-size: 44px;
+        line-height: 58.8px;
+    }
+    section.archive-your-dream {
+        padding: 60px 0 20px;
+        position: relative;
+        z-index: 1;
+    }
+    section.archive-your-dream .lft p {
+        font-size: 28px;
+        line-height: 32.6px;
+    }
+    .inr-effective-workout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inr-effective-workout img {
+        width: 100%;
+    }
+    .inr-effective-workout .lft h2 {
+        font-size: 32px;
+        line-height: 42.2px;
+    }
+    .inr-effective-workout .lft p {
+        font-size: 24px;
+        line-height: 32.6px;
+        margin: 12px 0 60px;
+        max-width: 460px;
+    }
+}
+@media(max-width:767px){
+    section {
+        height: auto;
+        padding: 60px 0;
+    }
+    .container {
+        padding: 0 20px;
+        width: 100%;
+    }
+    section.archive-your-dream .btm-logos {
+        position: inherit;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        row-gap: 30px;
+    }
+    section.archive-your-dream .btm-logos img {
+        width: 97px;
+        height: auto;
+    }
+    section.archive-your-dream .btm-logos img[alt="mayo clinic"] {
+        order: 2;
+        width: 40px;
+    }
+    section.archive-your-dream .btm-logos img[alt="Wall Street"] {
+        order: 1;
+        width: 120px;
+    }
+    section.archive-your-dream .inr-archive {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        z-index: 1;
+    }
+    section.archive-your-dream .inr-archive .ryt img {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: auto;
+        z-index: -1;
+        bottom: 0;
+        object-fit: contain !important;
+        left: 50%;
+        transform: translateX(-28%);
+    }
+    section.archive-your-dream .lft h1 {
+        font-size: 38px;
+        line-height: 48.8px;
+    }
+    section.archive-your-dream {
+        padding: 60px 0 20px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    section.archive-your-dream .inr-both-started label, section.archive-your-dream .inr-both-started label a {
+        width: 100%;
+    }
+    section.archive-your-dream .inr-both-started label a{
+        padding: 20px 20px;
+        font-size: 16px;
+    }
+    section.archive-your-dream .inr-both-started {
+        gap: 16px;
+        margin-top: 188px;
+    }
+    section.archive-your-dream .lft p {
+        font-size: 22px;
+        line-height: 28.6px;
+        max-width: 240px;
+    }
+    .inr-effective-workout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inr-effective-workout img {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .inr-effective-workout .lft h2 {
+        font-size: 32px;
+        line-height: 42.2px;
+    }
+    .inr-effective-workout .lft p {
+        font-size: 18px;
+        line-height: 26.6px;
+        margin: 12px 0 60px;
+        max-width: 290px;
+    }
+    .multistep-form .inr-form-archive h2 {
+        font-size: 22px;
+        line-height: 32.6px;
+    }
+    .multistep-form .inr-form-archive {
+        padding: 40px 20px;
+    }
+    .multistep-form .form-section.active h2 {
+        font-size: 20px;
+        line-height: 26.6px;
+    }
+    .multistep-form .form-section.active p {
+        font-size: 17px;
+    }
+    .multistep-form .form-group label {
+        padding: 20px 40px;
+    }
+    .inr-footer {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 0 20px;
+        gap: 10px;
+    }
+    .multistep-form button#submitBtn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .useful-links ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        row-gap: 10px;
+    }
+    #progressCanvas {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .back-color {
+        width: 160px;
+        height: 160px;
+    }
+    .back-color:after {
+        width: 145px;
+        height: 145px;
+        left: -13px;
+        top: -13px;
+    }
+    span#progressText {
+        font-size: 48.6px;
+        line-height: 56.75px;
+    }
+    span#progressText sub {
+        font-size: 20px;
+    }
+    section.archive-effective-workout {
+        padding-bottom: 0px;
+    }
+    .main-great-news {
+        padding: 24px 20px;
+    }
+    .main-great-news h3 {
+        font-size: 32px;
+        line-height: 34.6px;
+    }
+    .main-great-news a {
+        font-size: 18px;
+        line-height: 22.6px;
+        padding: 16px 10px;
+    }
+    .main-great-news ul li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .main-great-news h2 {
+        font-size: 22px;
+        line-height: 28.6px;
+        margin-bottom: 24px;
+    }
+    .canvans-main {
+        margin: 0;
+        width: 100% !important;
+    }
+    .useful-links {
+        text-align: left;
+    }
+}

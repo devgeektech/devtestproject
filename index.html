@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achieve Your Dream</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-------------- Hero Section Achieve Your Dream ---------------->
+    <section class="archive-your-dream active">
+        <div class="container">
+            <div class="inr-archive">
+                <div class="lft">
+                    <h1>Achieve Your Dream Figure with Quick and Effective Workouts.</h1>
+                    <p>Take this 30-second quiz to find out how</p>
+                    <div class="inr-both-started">
+                        <label>
+                            <div class="fe_1">
+                                <input type="radio" name="select" value="female" class="check_radio_in" id="female">
+                                <img src="images/female.svg" alt="female">Women Start Here
+                            </div>
+                            <!-- <a href="#step-form">
+                                <input type="radio" name="select" value="female" id="female">
+                                <img src="images/female.svg" alt="female">Women Start Here
+                            </a> -->
+                        </label>
+                        <label>
+                            <div class="fe_1">
+                                <input type="radio" name="select" value="men" class="check_radio_in"  id="men">
+                                <img src="images/men.svg" alt="men">Men Start Here
+                            </div>
+                            <!-- <a href="#step-form">
+                                <input type="radio" name="select" value="men" id="men">
+                                <img src="images/men.svg" alt="men">Men Start Here
+                            </a> -->
+                        </label>
+                    </div>
+                </div>
+                <div class="ryt">
+                    <img src="images/banner-pic.png" alt="banner">
+                </div>
+            </div>
+            <div class="btm-logos">
+                <img src="images/women-health.svg" alt="Women Health" />
+                <img src="images/forbes.svg" alt="forbes" />
+                <img src="images/mayo-clinic.svg" alt="mayo clinic" />
+                <img src="images/The-Wall-Street.svg" alt="Wall Street" />
+                <img src="images/vogue.svg" alt="vogue" />
+            </div>
+        </div>
+    </section>
+
+    <!--------------- Multistep From --------------->
+    <section class="multistep-form hidden" id="step-form">
+        <div class="container">
+            <div class="inr-form-archive">
+                <h2>Achieve Your Dream Figure with Quick and Effective Workouts.</h2>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <form id="cardiologyForm">
+                    <!-- Personal Information -->
+                    <div class="form-section active" data-section="1">
+                        <h2 class="section-title">Do you think hours of cardio is beneficial for fat loss?</h2>
+                        <p>(Many people think doing cardio every day is the answer.)</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" value="33.33" name="select" id="Yes">Yes
+                            </label>
+                            <label>
+                                <input type="radio" value="00.00" name="select" id="No">No
+                            </label>
+                            <label>
+                                <input type="radio" value="00.00" name="select" id="Not Sure">Not Sure
+                            </label>
+                        </div>
+                    </div>
+        
+                    <!-- Insurance Details -->
+                    <div class="form-section" data-section="2">
+                        <h2 class="section-title">If there was a 7-minute routine to get you fit, would you want to add it to your daily routine?</h2>
+                        <p>(Certain exercise routines can help ignite your metabolism for faster fat burn).</p>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="radio"  value="33.33" name="select" id="Definitely">Definitely
+                            </label>
+                            <label>
+                                <input type="radio"  value="00.00" name="select" id="Maybe">Maybe
+                            </label>
+                            <label id="Not-Sure">
+                                <input type="radio" value="00.00" name="select" id="Not Sure">Not Sure
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Insurance Details -->
+                    <div class="form-section" data-section="2">
+                        <h2 class="section-title">If there was a 7-minute routine to get you fit, would you want to add it to your daily routine?</h2>
+                        <p>(Certain exercise routines can help ignite your metabolism for faster fat burn).</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" value="33.33" name="select"  class="common_cls" id="Definitely">Definitely
+                            </label>
+                            <label>
+                                <input type="radio"  value="00.00" name="select"  class="common_cls"  id="Maybe">Maybe
+                            </label>
+                            <label>
+                                <input type="radio" value="00.00"  name="select"  class="common_cls"  id="Not_Sure">Not Sure
+                            </label>
+                        </div>
+                    </div>
+        
+                   
+        
+                    <div class="buttons">
+                        <button type="button" class="btn-prev" id="prevBtn" style="display: none;"><img src="images/back-icon.svg" alt="back icon"></button>
+                        <span  id="section-counter"></span>
+                        <button type="button" class="btn-next" id="nextBtn"><img src="images/next-icon.svg" alt="next icon"></button>
+                        <!-- <button type="submit" class="btn-submit" id="submitBtn" style="display: none;">Submit</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Circle counter ---------------->
+    <section class="archive-effective-workout" id="effective-workout">
+        <div class="container">
+            <div class="inr-effective-workout">
+                <div class="lft">
+                    <h2>Achieve Your Dream Figure with Quick and Effective Workouts.</h2>
+                    <p>Please wait while we match you with the best routine for maximum fat loss...</p>
+                    <div style="width: 350px; text-align: center;" class="canvans-main">
+                        <span id="progressText">0<sup>%</sup></span>
+                        <div class="back-color"></div>
+                        <canvas id="progressCanvas" width="350" height="350"></canvas>
+                    </div>
+
+                </div>
+                <div class="ryt">
+                    <img src="images/woman.png" alt="women">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------ Great News ---------------->
+    <section class="great-news" id="great_news">
+        <div class="container">
+            <div class="main-great-news">
+                <h2>Achieve Your Dream Figure with Quick and Effective Workouts.</h2>
+                <h3>Great News</h3>
+                <ul>
+                    <li>Your ideal fat burning routine has been calculated!</li>
+                    <li>Based on your answers, we’ve identified one simple method that you can start doing TODAY to help maximize results, in mini-mal time</li>
+                    <li>Don’t worry... it doesn’t require long hours in the gym, running miles on a treadmill, or some super intense cardio workout.</li>
+                    <li>Instead, this little-known “S.I.T. routine” can be done from the convenience of home, using your body’s own resistance, in just 7-minutes a day.</li>
+                    <li>But here’s the kicker: The special, hyper-focused movements have the potential to burn fat hours later, even while you sleep!</li>
+                    <li>In the free presentation below, world renowned nutrition, fitness and weight loss expert, Meredith Shirk, explains it all.</li>
+                    <li>Discover the virtually foolproof way to finally melt off stubborn fat, regardless of your age or activity level, revealing a thinner, leaner, more toned body that you’ll absolutely LOVE!</li>
+                    <li>(This major metabolic breakthrough has already helped thousands of women get the body of thei dreams... and you could be next.)</li>
+                </ul>
+                <a href="#footer">Watch Presentation Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------Footer -------------->
+    <footer class="main-footer" id="footer">
+        <div class="container">
+            <div class="inr-footer">
+                <div class="copy-right">
+                    <p>© 2024 Cool Company, All Rights Reserved</p>
+                </div>
+                <div class="useful-links">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm-content">
+                <p>Content, images, and assets on this site may not be reproduced, transmitted, cached, distributed, or used in any way without prior written consent. This site does not offer professional medical advice or services. The ideas, procedures, and suggestions provided here are not a substitute for consulting your physician and should be used only as part of planning your overall health and fitness plan with medical supervision. Our Terms of Service limit liability, and you must read and agree to them before using this site. This information is not intended to diagnose, treat, cure, or prevent any disease. Your results may differ from any claims or testimonials. Typical results are not guaranteed; most people do not achieve results because they do not take consistent action. The examples shown are of individuals who made lifestyle changes and are not typical. Achieving results requires commitment and adherence to a plan</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
